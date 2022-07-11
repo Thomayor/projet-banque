@@ -253,3 +253,41 @@ section .compte{
 };
 
 }
+
+@media screen and (max-width: 390px) {
+
+      header{
+        width: 100%;
+
+    } 
+
+  
+
+section .compte{
+    display: block;
+    margin: 0;
+    margin: auto;
+    margin-top: 15px;
+    width: 100%;
+} 
+
+section .compte:nth-child(2){
+    display: block;
+    margin-left: 0;
+}
+   
+section .compte:nth-child(3){
+    display: block;
+    margin-left: 0;
+}
+   
+.open {
+    margin: 0px;
+    padding: 0px;
+} 
+
+section .compte img{
+    width: 100%;
+} 
+
+}
