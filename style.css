@@ -6,11 +6,21 @@ header {
     background-color: #194d43;
     font-family:sans-serif;
     height: 500px;
+    position:relative;
 
 }
 header nav {
     display: flex;
     justify-content: space-between;
+
+}
+header nav a{
+    text-decoration: none;
+}
+header nav ul {
+    display:block;
+    margin: auto;
+    text-decoration: none;
 
 }
 
@@ -34,7 +44,8 @@ header h1 {
     line-height: 300px;
 }
 
-header nav a {
+
+header nav .ouvrircompte {
     border-radius:15px;
     outline: 2px solid white;
     margin:auto;
@@ -43,6 +54,8 @@ header nav a {
     color: #f1f1f1;
     margin-top: 20px;
     font-weight: bolder;
+    margin-left: 30px;
+   
 }
 
 /* cards container */
@@ -159,9 +172,79 @@ section .compte img{
     margin-top: 20px;
     font-weight: bolder;
     text-align: center;
+    
 }
 
 .open span{
     color: #194d43;
     margin-top: 20px;
+}
+
+/* responsive part*/
+
+@media screen and (max-width: 428px) {
+    
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header nav img {
+    margin-left: 0;
+}
+
+header nav ul{
+    margin: 0;
+    margin-top: 30px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav ul li{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+header nav  ul .ouvrircompte{
+    display:block;
+    margin: auto;
+    margin-top: 30px;
+
+    
+}
+body section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+section .compte{
+    display: block;
+    margin: auto;
+}
+
+.open a {
+    display: block;
+    width: 50%;
+    background-color: #137763;
+    margin: auto;
+    border-radius: 40px;
+    margin-top: 30px;}
+
+.open img{
+    width : 40%;
+};
+
 }
