@@ -261,7 +261,14 @@ section .compte{
 
     } 
 
-  
+  body{
+    position: relative;
+  }
+
+  .open{
+    position: absolute;
+    top: 96%;
+  }
 
 section .compte{
     display: block;
@@ -281,10 +288,7 @@ section .compte:nth-child(3){
     margin-left: 0;
 }
    
-.open {
-    margin: 0px;
-    padding: 0px;
-} 
+
 
 section .compte img{
     width: 100%;
