@@ -17,6 +17,11 @@ header nav {
 header nav a{
     text-decoration: none;
 }
+
+header ul li:hover{
+    opacity: 50%;
+}
+
 header nav ul {
     display:block;
     margin: auto;
